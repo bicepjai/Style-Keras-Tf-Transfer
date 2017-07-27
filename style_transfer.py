@@ -1,3 +1,19 @@
+
+
+"""
+style-tf-transfer.py
+
+This file is the entry point for the execution of the algorithms what gathers commandline options
+and validation are performed before being used to perform the task of stryle transfer.
+"""
+
+__author__ = "Jayaram Prabhu Durairaj"
+__credits__ = ["Jayaram Prabhu Durairaj"]
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "Jayaram Prabhu Durairaj"
+__email__ = "bicepjai@gmail.com"
+
 from __future__ import print_function
 from argparse import ArgumentParser
 import os, sys, shutil
@@ -5,29 +21,19 @@ from time import gmtime, strftime
 import logging
 import tensorflow as tf
 
+# path setup to access lib folder
 sys.path.insert(0, 'lib')
-from config import PRETRAINED_MODEL_LIST, STYLE_ALGO_LIST, CONTENT_STYLE_LAYERS_WEIGHTS
+
+# local imports
 from setup import style_it
 from utils import get_image_dims
+from config import PRETRAINED_MODEL_LIST, STYLE_ALGO_LIST, CONTENT_STYLE_LAYERS_WEIGHTS
 
 # default values
-STYLE_IMAGE = 'images/styles/starry_night.jpg'
-STYLE_ALGO = 'gatsy_et_al'
-PRETRAINED_MODEL = 'vgg19'
-
-LOW_QUAL_IMAGE_DIMS = "250x333" # (height, width)
-NOISE_RATIO = 0.6
-CONTENT_WEIGHT = 0.01
-STYLE_WEIGHT = 1
-
-LEARNING_RATE = 1 # 1e-3
-EPOCHS = 300
-BATCH_SIZE = 5
-GPU_DEVICE_ID = 0
-
-STORE_EVERY_EPOCHS = 100
-CHECKPOINT_EVERY_EPOCHS = 100
-SUMMARY_EVERY_EPOCHS = 50
+from config import STYLE_IMAGE, STYLE_ALGO, PRETRAINED_MODEL
+from config import LOW_QUAL_IMAGE_DIMS, NOISE_RATIO, CONTENT_WEIGHT, STYLE_WEIGHT
+from config import LEARNING_RATE, EPOCHS, BATCH_SIZE, GPU_DEVICE_ID
+from config import STORE_EVERY_EPOCHS, CHECKPOINT_EVERY_EPOCHS, SUMMARY_EVERY_EPOCHS
 
 def build_parser():
     """
