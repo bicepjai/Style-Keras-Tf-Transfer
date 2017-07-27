@@ -2,16 +2,16 @@
 
 ## Introduction
 
-This project is intented to create all the existing style transfer methods in tensorflow usiong proper
-software development methodologies and appropriate comments  in necessary places. This is an attempt to
-break away from hacked-up scripts that has no comments and design.
+This project is intented to create all the existing style transfer methods in tensorflow using proper
+software design and appropriate comments for clarity. This is an attempt to break away from hacked-up 
+scripts that has no comments and design.
 
 Style transfers available:
 
 1. A Neural Algorithm of Artistic Style" by L. Gatys, A. Ecker, and M. Bethge
    paper: http://arxiv.org/abs/1508.06576. 
 
-2. ...
+2. more to come or please give pull request ...
 
 ## Requirements
 
@@ -20,7 +20,7 @@ Style transfers available:
  - Tensorflow
  - Image
 
-It is suggested to use GPU fro high quality pictures
+It is suggested to use GPU for high quality pictures
 
 ## Usage
 ```
