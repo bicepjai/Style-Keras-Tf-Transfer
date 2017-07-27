@@ -1,6 +1,7 @@
 
 """
 config.py
+
 This file contains configurations used to style transfer algorithms and the available options
 that can be used in this project. Command line option validation are also performed on choices
 available from this configuration file.
@@ -9,11 +10,29 @@ available from this configuration file.
 __author__ = "Jayaram Prabhu Durairaj"
 __credits__ = ["Jayaram Prabhu Durairaj"]
 __license__ = "GPL"
-__version__ = "1.0.1"
 __maintainer__ = "Jayaram Prabhu Durairaj"
 __email__ = "bicepjai@gmail.com"
 
+# default values
+STYLE_IMAGE = 'images/styles/starry_night.jpg'
+STYLE_ALGO = 'gatsy_et_al'
+PRETRAINED_MODEL = 'vgg19'
 
+LOW_QUAL_IMAGE_DIMS = "250x333" # (height, width)
+NOISE_RATIO = 0.6
+CONTENT_WEIGHT = 0.01
+STYLE_WEIGHT = 1
+
+LEARNING_RATE = 1 # 1e-3
+EPOCHS = 300
+BATCH_SIZE = 5
+GPU_DEVICE_ID = 0
+
+STORE_EVERY_EPOCHS = 100
+CHECKPOINT_EVERY_EPOCHS = 100
+SUMMARY_EVERY_EPOCHS = 50
+
+# available options
 PRETRAINED_MODEL_LIST = ['vgg19']
 
 STYLE_ALGO_LIST = [
