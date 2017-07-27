@@ -1,5 +1,7 @@
+
 """
 gatsy_et_al.py
+
 This file contains class StyleTransfer1 which can be used to transfer style from style image to 
 another content image. This is implementation of paper "A Neural Algorithm of Artistic Style" by 
 L. Gatys, A. Ecker, and M. Bethge (paper: http://arxiv.org/abs/1508.06576)
@@ -10,7 +12,6 @@ code fragments referred from https://github.com/chiphuyen/tf-stanford-tutorials
 __author__ = "Jayaram Prabhu Durairaj"
 __credits__ = ["Jayaram Prabhu Durairaj", "Chip Huyen"]
 __license__ = "GPL"
-__version__ = "1.0.1"
 __maintainer__ = "Jayaram Prabhu Durairaj"
 __email__ = "bicepjai@gmail.com"
 
