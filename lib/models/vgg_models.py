@@ -1,6 +1,7 @@
 
 """
 vgg_models.py
+
 This file contains methods that can be used to load vgg model into tensorflow graph with
 layers named after original model. The weights are downloaded and loaded into a dictionary.
 
@@ -11,7 +12,6 @@ Load VGGNet weights from http://www.robots.ox.ac.uk/~vgg/research/very_deep/
 __author__ = "Jayaram Prabhu Durairaj"
 __credits__ = ["Jayaram Prabhu Durairaj", "Chip Huyen"]
 __license__ = "GPL"
-__version__ = "1.0.1"
 __maintainer__ = "Jayaram Prabhu Durairaj"
 __email__ = "bicepjai@gmail.com"
 
