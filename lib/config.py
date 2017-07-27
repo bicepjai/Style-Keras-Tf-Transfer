@@ -1,8 +1,17 @@
 
+"""
+config.py
+This file contains configurations used to style transfer algorithms and the available options
+that can be used in this project. Command line option validation are also performed on choices
+available from this configuration file.
+"""
 
-# =====================================================
-# configurations used for different style transfers
-# =====================================================
+__author__ = "Jayaram Prabhu Durairaj"
+__credits__ = ["Jayaram Prabhu Durairaj"]
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "Jayaram Prabhu Durairaj"
+__email__ = "bicepjai@gmail.com"
 
 
 PRETRAINED_MODEL_LIST = ['vgg19']
@@ -27,8 +36,6 @@ CONTENT_STYLE_LAYERS_WEIGHTS = {
                                             }
                         },
 
-            # content layers and style layers used from 
-            #https://github.com/fzliu/style-transfer/blob/master/style.py
             "googlenet" : {
                             "content": {
                                             "conv2/3x3": 2e-4,
