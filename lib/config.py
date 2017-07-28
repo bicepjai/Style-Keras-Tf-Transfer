@@ -18,7 +18,7 @@ STYLE_IMAGE = 'images/styles/starry_night.jpg'
 STYLE_ALGO = 'gatsy_et_al'
 PRETRAINED_MODEL = 'vgg19'
 
-LOW_QUAL_IMAGE_DIMS = "250x333" # (height, width)
+LOW_QUAL_IMAGE_DIMS = "250 333" # (height, width)
 NOISE_RATIO = 0.6
 CONTENT_WEIGHT = 0.01
 STYLE_WEIGHT = 1

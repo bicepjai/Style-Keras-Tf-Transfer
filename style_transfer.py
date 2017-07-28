@@ -142,7 +142,6 @@ def validate_arguments(options, parser):
     else:
         try:
             image_dims = tuple(map(int, options.image_dims))
-            print (image_dims)
             (options.image_height, options.image_width) = image_dims
             logging.debug("content image dimensions (%d x %d)" % (options.image_height, options.image_width))
         except ValueError as e:
